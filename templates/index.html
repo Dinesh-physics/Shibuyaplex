@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/styles.css">  <!-- Updated static path -->
+    <link rel="icon" type="image/x-icon" href="static/Screenshot_2025-02-04_210850.png"> <!-- Updated static path -->
+    <title>Anime For The Day</title>
+</head>
+<body>
+    <div class="container">
+        <img src="static/Screenshot_2025-02-04_210850.png" alt="Eagle Groups Logo" width="150" class="rounded-image">
+        <h4 class="title">Eagle Groups</h4>
+        <h1 class="title">シブヤプレックス<sub>4.o</sub></h1>
+        <h1 class="title">Anime For The Day</h1>
+
+        <form action="/recommendations" method="POST">
+            <div class="input-group">
+                <label for="genre">What genre are you interested in?</label>
+                <input type="text" id="genre" name="genre" required placeholder="e.g., Action, Romance">
+            </div>
+
+            <div class="input-group">
+                <label for="certificate">Select a certificate</label>
+                <select id="certificate" name="certificate" required>
+                    <option value="TV-PG">TV-PG</option>
+                    <option value="PG">PG</option>
+                    <option value="PG-13">PG-13</option>
+                    <option value="R">R</option>
+                    <option value="G">G</option>
+                    <option value="TV-14">TV-14</option>
+                    <option value="TV-Y7">TV-Y7</option>
+                    <option value="TV-Y">TV-Y</option>
+                    <option value="TV-G">TV-G</option>
+                    <option value="TV-13">TV-13</option>
+                    <option value="12A">12A</option>
+                    <option value="U">U</option>
+                    <option value="N/A">N/A</option>
+                    <option value="TV-MA">TV-MA</option>
+                    <option value="TV-Y7-FV">TV-Y7-FV</option>
+                    <option value="Not Rated">Not Rated</option>
+                    <option value="Unrated">Unrated</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="min_rating">Select a rating range (IMDb)</label>
+                <div class="rating-range">
+                    <input type="number" id="min_rating" name="min_rating" min="1" max="10" required placeholder="Min (1-10)">
+                    <input type="number" id="max_rating" name="max_rating" min="1" max="10" required placeholder="Max (1-10)">
+                </div>
+            </div>
+
+            <button type="submit" class="btn">Recommend</button>
+        </form>
+
+        <p class="small-text">2024 Anime database is now available for free.</p>
+        <p class="small-text">2025 Anime database will be available not earlier than late april 2025.</p>
+        <p class="small-text">Last updated on February 11, 2025 - V4.0.1</p>
+        <p class="credits">Credits: Developer and Engineer:<br>Dinesh Krishnan G<br><br>Contact<br>Email: dineshkrish262809@gmail.com</p>
+    </div>
+    <p style="text-align: center;">If there is any issue with the website, please contact the above given contact details. Shibuyaplex will debug the issue shortly.</p>
+</body>
+</html>

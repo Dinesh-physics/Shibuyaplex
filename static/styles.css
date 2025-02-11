@@ -1,0 +1,104 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000; /* Dark background */
+    color: #ffffff; /* Light text color */
+    margin: 0;
+    padding: 20px;
+}
+
+/* Container Box */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgba(56, 56, 56, 0.7); /* Slightly darkened container background */
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(202, 202, 202, 0.5); /* Darker shadow for depth */
+    text-align: center;
+}
+
+/* Image Styling */
+.rounded-image {
+    display: block;
+    margin: 15px auto; /* Adds gap between the image and container */
+    border-radius: 100px; /* Curved corners */
+}
+
+/* Titles */
+.title {
+    text-align: center;
+    color: #070473; /* Highlighted text color */
+    font-style: italic;
+}
+
+/* Input Fields */
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #cccccc; /* Lighter text color for labels */
+}
+
+.input-group input,
+.input-group select {
+    width: 100%;
+    padding: 8px;
+    background-color: #1e1e1e; /* Dark input background */
+    color: #ffffff; /* Light text color */
+    border: 1px solid #555555; /* Darker border */
+    border-radius: 4px;
+}
+
+/* IMDb Rating Input */
+.rating-range {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rating-range input {
+    width: 48%;
+    background-color: #1e1e1e; /* Dark input background */
+    color: #ffffff;
+    border: 1px solid #555555;
+}
+
+/* Button */
+.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #e2ea00; /* Primary button color */
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #b4cc00; /* Hover color */
+}
+
+/* Small Text Styling */
+.small-text {
+    text-align: center;
+    font-size: small;
+}
+
+/* Credits */
+.credits {
+    text-align: center;
+    font-size: large;
+    color: #b4cc00;
+}
+
+/* Description */
+.description {
+    text-align: center;
+    color: #b4cc00;
+    font-size: large;
+}

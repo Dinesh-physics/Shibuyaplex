@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+        <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='Screenshot_2025-02-04_210850.png') }}">
+        <title>Anime For The Day</title>
+    </head>    
+<body>
+    <div class="container">
+        <img src="{{ url_for('static', filename='Screenshot_2025-02-04_210850.png') }}" 
+             alt="Eagle Groups Logo" width="150" class="rounded-image">
+             <h4 class="title">Eagle Groups</h4>
+             <h1 class="title">シブヤプレックス<sub>4.o</sub></h1>
+             <h1 class="title">Anime For The Day</h1>
+
+        {% if tables %}
+            <div class="recommendations" style="margin: 0 auto; text-align: center;">
+                {{ tables|safe }}
+            </div>
+        {% else %}
+            <p>Unfortunately, there is no anime recommendations found based on your criteria. Please check with other specifications.</p>
+        {% endif %}
+        <div style="text-align: center; margin-top: 20px;">
+            <a href="/" class="btn" style="color: black; background-color: #b4cc00; padding: 5px 5px; display: inline-block; font-size: 18px;">Home</a>
+            <p class="credits">Credits: Developer and Engineer:<br>Dinesh Krishnan G<br><br>Contact<br>Email: dineshkrish262809@gmail.com</p>
+    </div>
+    <p style="text-align: center;">If there is any issue with the website, please contact the above given contact details. Shibuyaplex will debug the issue shortly.</p>
+        </div>                
+    </div>
+</body>
+</html>
